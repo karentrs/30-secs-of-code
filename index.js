@@ -9,7 +9,7 @@ console.log('Hello World');
 //the same steps. 
 
 //to declare a variable use 'let'/cannot be a reserved keyword/should be meaningful
-let name='Mosh';
+let name ='Mosh';
 console.log(name);
 
 const interestRate = 0.3;
@@ -26,3 +26,10 @@ let lastName = null; //use null when we want the value of the variable to be cle
 
 //javascript is a dynamic language. The value of a variable can change.
 
+//reference types: objects, arrays, and functions
+let person = {
+    name: 'Mosh',
+    age: 30
+};
+
+console.log(person);
