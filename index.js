@@ -32,4 +32,8 @@ let person = {
     age: 30
 };
 
+//more efficient
 console.log(person);
+
+
+//leet code example
