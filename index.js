@@ -32,8 +32,26 @@ let person = {
     age: 30
 };
 
+//dot notation(default choice)
+person.name = 'John';
+
+//bracket notation
+let selection = 'name';
+person['name'] = 'Mary'
+//alows us to get the property in a more dynamic way
+person[selection] = 'Mary';
+
 //more efficient
-console.log(person);
+console.log(person.name);
 
 
-//leet code example
+//arrays
+//[] : array literal
+//arrays are dynamic
+let selectedColors = ['red', 'blue'];
+selectedColors[2] = 1;
+console.log(selectedColors[0]);
+
+//in the conosle, remmeber we can type typeof selectedColors and receive back what it is ex."object"
+
+console.log(selectedColors.length);
