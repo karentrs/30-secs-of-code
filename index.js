@@ -9,8 +9,8 @@ console.log('Hello World');
 //the same steps. 
 
 //to declare a variable use 'let'/cannot be a reserved keyword/should be meaningful
-let name ='Mosh';
-console.log(name);
+// let name ='Mosh';
+// console.log(name);
 
 const interestRate = 0.3;
 // will get an error bc using const does not let you change the value of the variable
@@ -55,3 +55,16 @@ console.log(selectedColors[0]);
 //in the conosle, remmeber we can type typeof selectedColors and receive back what it is ex."object"
 
 console.log(selectedColors.length);
+
+//functions
+//v similar to other languages
+//name is a parameter here
+function greet(name, lastName) {
+    console.log('Hello ' + name + ' ' + lastName);
+    
+}
+
+//John is an argument here
+greet('John', 'Smith');
+//will return undefined if there is no last name
+greet('Mary');
