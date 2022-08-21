@@ -68,3 +68,23 @@ function greet(name, lastName) {
 greet('John', 'Smith');
 //will return undefined if there is no last name
 greet('Mary');
+
+reject = (pred, array) =>
+array.filter((...args) =>
+!pred(...args));
+//works on arrays and denies ewhatever Array.filter would've kept
+
+//filter example
+nums = [1,2,3,4,5]
+
+nums.filter((x) => x < 4);
+// [1,2,3]
+
+//copying and pasting that predicate into reject does the opposite
+reject((x) => x > 3, nums);
+//[1,2,3]
+
+//whats the point?
+//expresses ideas more easily
+//same probelm different perspective
+//reject anyone under 18 instead of filter for everyone whose ages are 18 or older
